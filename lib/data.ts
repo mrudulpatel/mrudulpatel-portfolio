@@ -71,7 +71,7 @@ export const experiencesData = [
     {
       title: "TechnoVision",
       description:
-        "This website was developed for TechnoVision A Technical Event organised in my college. It was used to showcase all the activities and games of the event and also accept registrations with payment methods.",
+        "This website highlights TechnoVision, featuring event details, activities, games, and streamlined registration with convenient payment methods.",
       tags: ["React", "Javascript", "Google Firebase", "Bootstrap CSS"],
       imageUrl: technovision,
     },
