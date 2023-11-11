@@ -6,7 +6,7 @@ type Props = {
 
 const SectionHeading = (props: Props) => {
   return (
-    <h2 className="text-3xl capitalize font-medium mb-8">{props.heading}</h2>
+    <h2 className="text-3xl capitalize text-center font-medium mb-8">{props.heading}</h2>
   )
 }
 
