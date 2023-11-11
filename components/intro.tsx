@@ -1,26 +1,16 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import profilephoto from "@/public/profilephoto.jpg";
-import { useActiveSectionContext } from "@/context/active-section-context";
-import { useInView } from "react-intersection-observer";
+import useSectionInView from "@/lib/hooks";
 
 const Intro = () => {
-  const {setActiveSection} = useActiveSectionContext();
-  const {ref, inView} = useInView({
-    threshold: 0.5
-  });
-
-  useEffect(() => {
-    if(inView) {
-      setActiveSection("Home");
-    }
-  }, [inView, setActiveSection]);
+  const { ref } = useSectionInView("Home");
   
   return (
     <section ref={ref} className="mb-28 max-w-[50rem] text-center scroll-mt-[100rem] sm:mb-0" id="home">
@@ -73,7 +63,7 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
-        className="flex flex-col sm:flex-row justify-center gap-2 px-4 items-center text-lg font-medium"
+        className="flex flex-col sm:flex-row justify-center gap-4 px-4 items-center text-lg font-medium"
       >
         <Link
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
