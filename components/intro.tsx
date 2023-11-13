@@ -8,12 +8,18 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import profilephoto from "@/public/profilephoto.jpg";
 import useSectionInView from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 const Intro = () => {
   const { ref } = useSectionInView("Home");
-  
+  const { setActiveSection, setTimeLastClicked } = useActiveSectionContext();
+
   return (
-    <section ref={ref} className="mb-28 max-w-[50rem] text-center scroll-mt-[100rem] sm:mb-0" id="home">
+    <section
+      ref={ref}
+      className="mb-28 max-w-[50rem] text-center scroll-mt-[100rem] sm:mb-0"
+      id="home"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -67,7 +73,11 @@ const Intro = () => {
       >
         <Link
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          href={"#contact"}
+          href="#contact"
+          onClick={() => {
+            setActiveSection("Contact")
+            setTimeLastClicked(Date.now());
+          }}
         >
           Contact Me{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
