@@ -11,7 +11,7 @@ const Footer = () => {
       className="mb-10 px-4 text-center text-gray-500"
     >
       <small className="mb-2 block text-xs">
-        &copy; {new Date().getFullYear()} Mrudul Patel. All Rights Reserved.
+        &copy; {new Date().getFullYear()} Mrudul Patel. All Rights Reserved. Version v0.1
       </small>
       <p className="text-xs">
         <span className="font-semibold">About this website: </span>built with
