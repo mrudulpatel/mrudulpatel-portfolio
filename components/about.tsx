@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import useSectionInView from "@/lib/hooks";
 
 const About = () => {
-
   const { ref } = useSectionInView("About");
 
   return (
@@ -20,30 +19,20 @@ const About = () => {
     >
       <SectionHeading heading={"About Me"} />
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+        I am <span className="font-bold">Mrudul Patel</span>, living in Pune,
+        MH. I am a B.E. graduating from JSPM Narhe Technical Campus, Pune. I
+        have a <span className="font-semibold">CGPA of 8.82/10</span> in my
+        academics. I am always{" "}
+        <span className="font-semibold">eager to learn new technologies</span>{" "}
+        that would upskill myself. I am a{" "}
+        <span className="italic font-semibold">self-motivated person</span>. I
+        am an{" "}
+        <span className="italic">
+          enthusiastic programmer and enjoy programming
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
-
-      <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy
-        playing video games, watching movies, and playing with my dog. I also
-        enjoy <span className="font-medium">learning new things</span>. I am
-        currently learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I&apos;m
-        also learning how to play the guitar.
+        . I have keen interest in{" "}
+        <u>Java, ReactJS, NextJS, Artificial Intelligence, Machine Learning</u>.
+        When I am not coding, I enjoy playing the piano.
       </p>
     </motion.section>
   );
