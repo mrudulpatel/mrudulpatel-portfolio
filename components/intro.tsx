@@ -86,7 +86,7 @@ const Intro = () => {
         <Link
           download={true}
           href="/CV.pdf"
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition border border-black/10"
+          className="group dark:bg-white/10 bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition border border-black/10"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -95,7 +95,7 @@ const Intro = () => {
         <Link
           target="_blank"
           href="https://www.linkedin.com/in/mrudul-patel-57039b21a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-          className="bg-white p-4 flex items-center text-gray-700 gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-110  active:scale-105 transition border border-black/10"
+          className="bg-white p-4 flex items-center text-gray-700 gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-110  active:scale-105 transition border border-black/10 dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </Link>
@@ -103,7 +103,7 @@ const Intro = () => {
         <Link
           target="_blank"
           href="https://github.com/mrudulpatel"
-          className="bg-white p-4 flex items-center text-gray-700 gap-2 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-110  active:scale-105 transition border border-black/10"
+          className="bg-white p-4 flex items-center text-gray-700 gap-2 rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-110  active:scale-105 transition border border-black/10 dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare />
         </Link>

@@ -20,7 +20,6 @@ export default function Home() {
       <Experience />
       <SectionDivider />
       <ContactMe />
-      <SectionDivider />
     </main>
   )
 }
