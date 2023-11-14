@@ -19,8 +19,8 @@ const About = () => {
     >
       <SectionHeading heading={"About Me"} />
       <p className="mb-3">
-        I am <span className="font-bold">Mrudul Patel</span>, living in Pune,
-        MH. I am a B.E. graduating from JSPM Narhe Technical Campus, Pune. I
+        I am <span className="font-bold">Mrudul Patel</span>. I live in Pune,
+        MH. I am pursuing my B.E. Computer Engineering from JSPM Narhe Technical Campus, Pune. I
         have a <span className="font-semibold">CGPA of 8.82/10</span> in my
         academics. I am always{" "}
         <span className="font-semibold">eager to learn new technologies</span>{" "}
